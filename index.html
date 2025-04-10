@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/Match3Builds.loader.js"></script>
+    <script src="Build/Match3PuzBuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Match3Builds.data.unityweb",
-        frameworkUrl: "Build/Match3Builds.framework.js.unityweb",
-        codeUrl: "Build/Match3Builds.wasm.unityweb",
+        dataUrl: "Build/Match3PuzBuild.data.unityweb",
+        frameworkUrl: "Build/Match3PuzBuild.framework.js.unityweb",
+        codeUrl: "Build/Match3PuzBuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "UnityBootcamp13",
         productName: "Match3",
